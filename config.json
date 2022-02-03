@@ -1,6 +1,6 @@
 {
   "name": "Scrypted",
-  "version": "0.2",
+  "version": "0.3",
   "url": "https://github.com/koush/scrypted",
   "slug": "scrypted",
   "description": "Scrypted is a home automation platform primarily focusing on making camera experiences seamless",
@@ -8,7 +8,7 @@
   "startup": "application",
   "boot": "auto",
   "ingress": true,
-  "ingress_port": 10443,
+  "ingress_port": 10080,
   "ports": {
     "10443/tcp": 10443
   },
