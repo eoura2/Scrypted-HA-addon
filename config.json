@@ -1,6 +1,6 @@
-{
+ {
   "name": "Scrypted",
-  "version": "0.3",
+  "version": "0.3.1",
   "url": "https://github.com/koush/scrypted",
   "slug": "scrypted",
   "description": "Scrypted is a home automation platform primarily focusing on making camera experiences seamless",
@@ -10,9 +10,15 @@
   "ingress": true,
   "ingress_port": 10080,
   "ports": {
-    "10443/tcp": 10443
+    "10443/tcp": 10443,
+    "21435/tcp": 21435,
+    "21436/tcp": 21436,
+    "21437/tcp": 21437
   },
   "ports_description": {
-    "10443/tcp": "API"
+    "10443/tcp": "Secure port for accessing Scrypted UI",
+    "21435/tcp": "Use this port for the homekit plugin in Scrypted",
+    "21436/tcp": "Use this port for the homekit plugin in Scrypted",
+    "21437/tcp": "Use this port for the homekit plugin in Scrypted"
   }
 }
