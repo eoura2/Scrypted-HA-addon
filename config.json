@@ -8,11 +8,11 @@
   "startup": "application",
   "boot": "auto",
   "ingress": true,
-  "ingress_port": 10430,
+  "ingress_port": 10443,
   "ports": {
-    "10430/tcp": 10430
+    "10443/tcp": 10443
   },
   "ports_description": {
-    "10430/tcp": "API"
+    "10443/tcp": "API"
   }
 }
