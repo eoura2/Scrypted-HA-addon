@@ -1,6 +1,6 @@
  {
   "name": "Scrypted",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "url": "https://github.com/koush/scrypted",
   "slug": "scrypted",
   "description": "Scrypted is a home automation platform primarily focusing on making camera experiences seamless",
@@ -10,12 +10,20 @@
   "ingress": true,
   "ingress_port": 10080,
   "ports": {
+    "1900/udp": 1900,
+    "5350/udp": 5350,
+    "5351/udp": 5351,
+    "5353/udp": 5353,
     "10443/tcp": 10443,
     "21435/tcp": 21435,
     "21436/tcp": 21436,
     "21437/tcp": 21437
   },
   "ports_description": {
+    "1900/udp": "Used for Bonjour discovery. Do not change",
+    "5350/udp": "Used for Bonjour discovery. Do not change",
+    "5351/udp": "Used for Bonjour discovery. Do not change",
+    "5353/udp": "Used for Bonjour discovery. Do not change",
     "10443/tcp": "Secure port for accessing Scrypted UI",
     "21435/tcp": "Use this port for the homekit plugin in Scrypted",
     "21436/tcp": "Use this port for the homekit plugin in Scrypted",
